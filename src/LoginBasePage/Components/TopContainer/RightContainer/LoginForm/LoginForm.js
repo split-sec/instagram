@@ -13,13 +13,21 @@ export default function LoginForm() {
         setPassword(loginPassword.current.value);
         console.log(`Login info: ${loginDetail} \nLogin password: ${password}`);
 
-        axios.get('http://localhost:3000/signin', {
-            'firstdata': `${loginDetail}`, 
-            'password': `${password}`
-        })
-        .then(res => console.log(res.data))
-        .catch((err) => console.log("Error has occured --->", err));
-
+        var data = {
+            firstdata: `${loginDetail}`,
+            password: `${password}`,
+          };
+      
+          const url = new URL('http://localhost:3000/signin');
+          url.search = new URLSearchParams(data).toString();
+          var requestOptions = {
+              method: "GET",
+          };
+      
+          fetch(url, requestOptions)
+            .then((response) => response.json())
+            .then((result) => console.log(result))
+            .catch((error) => console.log("Error shot ->", error));
 
     }
 
