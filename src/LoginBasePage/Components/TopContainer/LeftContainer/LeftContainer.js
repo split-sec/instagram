@@ -1,9 +1,9 @@
-import './LeftContainer.module.scss';
+import styles from './LeftContainer.module.scss';
 
 export default function LeftContainer() {
     return (
         <>
-            <div className='image-container'></div>
+            <div className={`${styles.image_container}`}></div>
         </>
     );
 }
