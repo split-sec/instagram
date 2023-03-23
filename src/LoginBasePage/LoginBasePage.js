@@ -1,7 +1,12 @@
-import styles from './LoginBasePage.module.css';
+import styles from './LoginBasePage.module.scss';
+import TopContainer from './Components/TopContainer/TopContainer';
+import BottomContainer from './Components/BottomContainer/BottomContainer';
 
 export default function LoginBasePage() {
     return(
-        <h1 className={ styles.working }>Working</h1>
+        <div className={`${styles.login_page} flex flex-col`}>
+            <TopContainer />
+            <BottomContainer />
+        </div>
     );
 }

@@ -1,4 +1,5 @@
-import './App.css';
+import './global.scss';
+import './App.module.scss';
 import LoginBasePage from './LoginBasePage/LoginBasePage.js';
 
 
