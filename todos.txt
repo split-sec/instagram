@@ -1,0 +1,18 @@
+----------------------------------------------------
+Design part
+- Page as a whole
+- Alternate page design for mobile screens
+- 
+- 
+- 
+- 
+----------------------------------------------------
+Functionality part
+- Folder structure
+- Componentisation
+- Input form changing on input
+- Routes
+- Animation for changing screens in the mobile mockup
+- Sign up page research
+-
+----------------------------------------------------

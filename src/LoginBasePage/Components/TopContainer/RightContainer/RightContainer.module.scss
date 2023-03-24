@@ -1,3 +1,32 @@
+.loginContainer {
+    align-items: center;
+    justify-content: center;
+
+    max-width: 350px;
+}
+
+.box {
+    border: 1px solid rgb(219, 219, 219);
+    
+    margin: 0 0 10px;
+    padding: 10px 0;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    color: #000;
+}
+
+.cta {
+    margin: 15px;
+}
+
+.ctaLink {
+    font-weight: 600;
+    color: rgb(0, 149, 246);
+}
+
 .button {
     height: 40px;
 }

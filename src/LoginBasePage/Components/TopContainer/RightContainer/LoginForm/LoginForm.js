@@ -1,5 +1,4 @@
 import styles from './LoginForm.module.scss';
-// import instaLogo from '../../../../'
 import { useState, useRef } from 'react';
 
 export default function LoginForm() {
@@ -9,30 +8,38 @@ export default function LoginForm() {
     const loginText = useRef();
     const loginPassword = useRef();
 
-    function clickedSubmit() {
+    function handleLoginDetail() {
         setLoginDetail(loginText.current.value);
+    }
+
+    function handlePassword() {
         setPassword(loginPassword.current.value);
+    }
+
+    function clickedSubmit() {
         console.log(`Login info: ${loginDetail} \nLogin password: ${password}`);
 
-        // try {
-        // var data = {
-        //     firstdata: `${loginDetail}`,
-        //     password: `${password}`,
-        //   };
+        try {
+        var data = {
+            firstdata: `${loginDetail}`,
+            password: `${password}`,
+          };
       
-        //   const url = new URL('http://192.168.1.149:3000/signin');
-        //   url.search = new URLSearchParams(data).toString();
-        //   var requestOptions = {
-        //       method: "GET",
-        //   };
+          const url = new URL('http://192.168.1.149:3000/signin');
+
+          var requestOptions = {
+              method: "POST",
+              body: JSON.stringify(data),
+              headers: { 'Content-Type': 'application/json' },
+          };
       
-        //   fetch(url, requestOptions)
-        //     .then((response) => response.json())
-        //     .then((result) => console.log(result))
-        //     .catch((error) => console.log("Error shot ->", error));
-        // } catch(err) {
-        //     console.log('error-->', err);
-        // }
+          fetch(url, requestOptions)
+            .then((response) => response.json())
+            .then((result) => console.log(result))
+            .catch((error) => console.log("Error shot ->", error));
+        } catch(err) {
+            console.log('error-->', err);
+        }
     }
 
 
@@ -44,11 +51,18 @@ export default function LoginForm() {
             </div>
             <div className={`${styles.formPlaceholder} flex flex-col`}>
                 <div className={`${styles.inputPlaceholder}`}>
-                    <input className={`${styles.input}`} type={'text'} ref={loginText}/>
+                    <div>
+                        <label className={`${styles.label_input}flex flex-col`}>
+                            <span>Phone number, username or email address</span>
+                            <input className={`${styles.input}`} type={'text'} ref={loginText} onChange={handleLoginDetail}/>
+                        </label>
+                    </div>
                 </div>
                 
                 <div className={`${styles.inputPlaceholder}`}>
-                    <input className={`${styles.input}`} type={'password'} ref={loginPassword}/>
+                    <div>
+                        <input className={`${styles.input}`} type={'password'} ref={loginPassword} onChange={handlePassword}/>
+                    </div>
                 </div>
 
                 <button className={`${styles.loginButton}`} onClick={clickedSubmit}>Log in</button>
