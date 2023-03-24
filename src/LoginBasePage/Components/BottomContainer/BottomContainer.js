@@ -3,7 +3,7 @@ import styles from './BottomContainer.module.scss';
 export default function BottomContainer() {
     return (
         <div className={`${styles.bottom_container} flex flex-col`}>
-            <div className={`${styles.bottom_section_1} flex`}>
+            <div className={`flex`}>
                 <div href="#" className={`${styles.login_hyperlink}`}>Meta</div>
                 <div href="#" className={`${styles.login_hyperlink}`}>About</div>
                 <div href="#" className={`${styles.login_hyperlink}`}>Blog</div>
@@ -19,8 +19,8 @@ export default function BottomContainer() {
                 <div href="#" className={`${styles.login_hyperlink}`}>Meta Verified</div>
             </div>
             <div className={`${styles.bottom_section_2} flex`}>
-                <div className={`${styles.language_button}`}></div>
-                <div>copyrightlogo 2023 Instagram from Meta</div>
+                <div className={`${styles.language_button}`}>English (UK)</div>
+                <div>© 2023 Instagram from Meta</div>
             </div>
         </div>
     )
