@@ -1,5 +1,5 @@
 import styles from './RightContainer.module.scss';
-import LoginForm from "./LoginForm/LoginForm";
+import LoginForm from "../../LoginForm/LoginForm.jsx";
 
 export default function RightContainer() {
     return (

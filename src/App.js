@@ -1,12 +1,12 @@
 import './global.scss';
 import './App.module.scss';
-import LoginBasePage from './LoginBasePage/LoginBasePage.js';
+import Landing from '../src/pages/Landing/Landing.jsx';
 
 
 function App() {
   return (
     <div>
-      <LoginBasePage />
+      <Landing />
     </div>
   );
 }

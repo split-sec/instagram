@@ -23,5 +23,5 @@ export default function BottomContainer() {
                 <div>© 2023 Instagram from Meta</div>
             </div>
         </div>
-    )
+    );
 }
