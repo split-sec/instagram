@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.justifyBetween {
+    justify-content: space-between;
+}
+
+.justifyEvenly {
+    justify-content: space-evenly;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.topNav {
+    padding: 0 16px;
+    height: 45px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.icons {
+    padding: 12px;
+    margin-right: 8px;
+}

@@ -32,7 +32,14 @@
 
 .inputPlaceholder div {
     border: 1px solid rgb(219, 219, 219);
+    height: 36px;
+    line-height: 36px;
+}
 
+.label {
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(142, 142, 142);
 }
 
 .label_input {
@@ -44,11 +51,6 @@
     border: none;
 
     background-color: rgb(250, 250, 250);
-}
-
-span {
-    font-size: 12px;
-    color: rgb(142, 142, 142);
 }
 
 .loginButton {
@@ -69,4 +71,27 @@ span {
     text-align: center;
     text-overflow: ellipsis;
     text-transform: inherit;
+}
+
+.orPlaceholder {
+    padding: 10px 40px 18px;
+}
+
+.dashedLine {
+    position: relative;
+    top: 0.45em;
+    height: 1px;
+    background-color: rgb(219, 219, 219);
+
+    flex-grow: 1;
+}
+
+.or {
+    position: relative;
+    top: 0.45em;
+    color:rgb(142, 142, 142);
+    font-weight: 600;
+    font-size: 13px;
+
+    margin: 0 18px;
 }

@@ -53,7 +53,7 @@ export default function LoginForm() {
                 <div className={`${styles.inputPlaceholder}`}>
                     <div>
                         <label className={`${styles.label_input}flex flex-col`}>
-                            <span>Phone number, username or email address</span>
+                            <p className={`${styles.label}`}>Phone number, username or email address</p>
                             <input className={`${styles.input}`} type={'text'} ref={loginText} onChange={handleLoginDetail}/>
                         </label>
                     </div>
@@ -66,6 +66,12 @@ export default function LoginForm() {
                 </div>
 
                 <button className={`${styles.loginButton}`} onClick={clickedSubmit}>Log in</button>
+
+                <div className={`${styles.orPlaceholder} flex`}>
+                    <div className={`${styles.dashedLine}`}></div>
+                    <div className={`${styles.or}`}>OR</div>
+                    <div className={`${styles.dashedLine}`}></div>
+                </div>
             </div>
         </div>
     );
