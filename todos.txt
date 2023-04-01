@@ -1,18 +1,20 @@
 ----------------------------------------------------
 Design part
-- Page as a whole
-- Alternate page design for mobile screens
+- Posts (TnB)
 - 
-- 
-- 
-- 
+- Story horizontal navigation (Mobile)
+- You've completely caught up (Mobile)
+- Suggestions for you (Mobile)
+- Top single line loading animation (Mobile)
+- Login (Both mobile and TnB)
+- Signup (Both mobile and TnB)
+- Homepage (TnB)
+- Posts (TnB)
 ----------------------------------------------------
 Functionality part
-- Folder structure
 - Componentisation
 - Input form changing on input
-- Routes
 - Animation for changing screens in the mobile mockup
-- Sign up page research
--
+- Post sample JSON data
+- 
 ----------------------------------------------------

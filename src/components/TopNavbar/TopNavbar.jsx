@@ -19,7 +19,11 @@ export default function TopNavbar() {
     return (
         <div className={`flex ${styles.topNav} ${styles.justifyBetween} ${styles.alignCenter}`}>
             <div className={`flex ${styles.alignCenter}`}>
-                <div className={`${styles.instagramIcon}`}>{instagramSvg}</div>
+                
+                <button class="instagramButton">
+                    <div className={`${styles.instagramIcon}`}>{instagramSvg}</div>
+                </button>
+                
                 <div className={`${styles.downChevronIcon}`}>{downChevronSvg}</div>
             </div>
 
