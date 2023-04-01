@@ -6,6 +6,7 @@ export default function Profile() {
         <>
             <h1>Profile</h1>
             <Navbar />
+            <p>Here</p>
         </>
     );
 }
