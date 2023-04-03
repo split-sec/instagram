@@ -11,7 +11,8 @@ export default function SuggestedForYou() {
                 <Link className={ `${styles.seeAll}` } to='/explore'>See all</Link>
             </div>
 
-            <div className={ `${styles.bottomContainer}` }>
+            <div className={ `${styles.bottomContainer} flex` }>
+                <SuggestedProfile />
                 <SuggestedProfile />
             </div>
         </div>

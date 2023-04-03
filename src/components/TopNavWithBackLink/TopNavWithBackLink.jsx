@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import styles from './TopNavWithBackLink.module.scss';
 
-export default function TopNavBackWithLink() {
+export default function TopNavBackWithLink({ leftLogo, rightLogo }) {
 
     const lesserSvg = (
         <svg aria-label="Back" className="x1lliihq x1n2onr6" color="rgb(38, 38, 38)" fill="rgb(38, 38, 38)" height="24" role="img" viewBox="0 0 24 24" width="24">
@@ -26,14 +26,20 @@ export default function TopNavBackWithLink() {
         <>
             <div className={`${styles.topNav} flex`}>
                 <Link to='/'>
-                    <div className={`${styles.backIcon}`}>{ lesserSvg }</div>
+                    <div className={`${styles.backIcon}`}>
+                        { leftLogo === undefined ? lesserSvg : leftLogo }
+                    </div>
                 </Link>
 
                 <div className={`${styles.namePlaceholder} flex`}>
                     <div>{`sampleusername`}</div>
-                    <div className={`${styles.downChevronIcon}`}>{ downChevronSvg }</div>
+                    <div className={`${styles.downChevronIcon}`}>
+                        { downChevronSvg }
+                    </div>
                 </div>
-                <div className={`${styles.newMessageIcon}`}>{ newMessageSvg }</div>
+                <div className={`${styles.newMessageIcon}`}>
+                    { rightLogo === undefined ? newMessageSvg : rightLogo }
+                </div>
             </div>
         </>
     );
