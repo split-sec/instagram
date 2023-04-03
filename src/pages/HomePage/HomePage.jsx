@@ -9,6 +9,8 @@ import Inbox from '../../components/Inbox/Inbox';
 import Profile from '../../components/Profile/Profile';
 import Notifications from '../../components/Notifications/Notifications';
 
+import ProfilePosts from '../../components/ProfilePosts/ProfilePosts';
+
 import { useViewport } from '../../helper/useViewport.jsx';
 import { ViewportProvider } from '../../helper/ViewPortContext.jsx';
 
@@ -47,7 +49,12 @@ export default function HomePage() {
                 <Route path='/explore' element ={<Explore />} />
                 <Route path='/reels' element ={<Reels />} />
                 <Route path='/direct/inbox' element ={<Inbox />} />
-                <Route path='/sampleName' element={<Profile />} />
+                <Route path='/sampleName' element={<Profile />}>
+                    <Route path='/sampleName' element={<ProfilePosts />} />
+                    <Route path='/sampleName/feed' element={<ProfilePosts />} />
+                    <Route path='/sampleName/tagged' element={<ProfilePosts />} />
+                    <Route path='/sampleName/saved' element={<ProfilePosts />} />
+                </Route>
                 <Route path='/notifications' element={<Notifications />} />
             </Routes>
         </ViewportProvider>
