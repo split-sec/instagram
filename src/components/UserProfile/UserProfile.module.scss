@@ -1,0 +1,68 @@
+.container {
+    margin: 16px 16px 24px;
+}
+
+.profilePictureContainer {
+    justify-content: center;
+
+    margin-right: 28px;
+}
+
+.profilePicture {
+    background-color: violet;
+
+    height: 77px;
+    width: 77px;
+
+    border-radius: 50%;
+}
+
+.sideTextContainer {
+    flex: 1;
+}
+
+.userNamePlaceholder {
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(0, 0, 0);
+
+    margin-bottom: 12px;
+}
+
+.greyButton {
+    height: 32px;
+
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+
+    border-radius: 8px;
+
+    background-color: rgb(239, 239, 239);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.greyButtonLast {
+    margin-top: 8px;
+}
+
+.userDetailsContainer {
+    padding: 0 16px 21px;
+    color:rgb(0, 0, 0);
+
+    font-size: 14px;
+}
+
+.userFullname {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.userAbout {
+    font-weight: 400;
+    line-height: 18px;
+}

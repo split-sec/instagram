@@ -46,14 +46,14 @@ export default function HomePage() {
                 <Route path='/' element={
                     width < 480 ? <Home /> : <h1>Here</h1>
                 } />
-                <Route path='/explore' element ={<Explore />} />
-                <Route path='/reels' element ={<Reels />} />
-                <Route path='/direct/inbox' element ={<Inbox />} />
-                <Route path='/sampleName' element={<Profile />}>
-                    <Route path='/sampleName' element={<ProfilePosts />} />
-                    <Route path='/sampleName/feed' element={<ProfilePosts />} />
-                    <Route path='/sampleName/tagged' element={<ProfilePosts />} />
-                    <Route path='/sampleName/saved' element={<ProfilePosts />} />
+                <Route path='explore' element ={<Explore />} />
+                <Route path='reels' element ={<Reels />} />
+                <Route path='direct/inbox' element ={<Inbox />} />
+                <Route path='sampleName' element={<Profile />} >
+                  <Route path='' element={<ProfilePosts /> } />
+                  <Route path='feed' element={<h1>Feed</h1>} />
+                  <Route path='tagged' element={<h1>Tagged</h1>} />
+                  <Route path='saved' element={<h1>Saved</h1>} />
                 </Route>
                 <Route path='/notifications' element={<Notifications />} />
             </Routes>

@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import TopNavBackWithLink from '../TopNavWithBackLink/TopNavWithBackLink';
 import UserContentMobile from '../UserContentMobile/UserContentMobile';
@@ -19,9 +19,33 @@ export default function Profile() {
         </svg>
     );
 
+    const downChevronSvg = (
+        <svg aria-label="Down Chevron Icon" className="x1lliihq x1n2onr6" color="rgb(38, 38, 38)" fill="rgb(38, 38, 38)" height="16" role="img" viewBox="0 0 24 24" width="16">
+            <title>Down Chevron Icon</title><path d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z"></path>
+        </svg>
+    );
+
     return (
         <>
-            <TopNavBackWithLink leftLogo={ settingsSvg } rightLogo={ addFriendsSvg }/>
+            {/* <TopNavBackWithLink leftLogo={ settingsSvg } rightLogo={ addFriendsSvg }/> */}
+
+            <div className={`${styles.topNav} flex`}>
+                <Link to='/'>
+                    <div className={`${styles.backIcon}`}>
+                        {settingsSvg}
+                    </div>
+                </Link>
+
+                <div className={`${styles.namePlaceholder} flex`}>
+                    <div>{`sampleusername`}</div>
+                    <div className={`${styles.downChevronIcon}`}>
+                        { downChevronSvg }
+                    </div>
+                </div>
+                <div className={`${styles.newMessageIcon}`}>
+                    {addFriendsSvg}
+                </div>
+            </div>
             <UserContentMobile />
             <Navbar />
         </>
