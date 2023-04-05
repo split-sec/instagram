@@ -46,8 +46,13 @@
     height: 36px;
 }
 
+input:focus {
+    outline: none;
+}
+
 .input {
     padding: 9px 8px 7px;
+    outline: none;
     border: none;
 
     background-color: rgb(250, 250, 250);
@@ -73,6 +78,10 @@
     text-transform: inherit;
 }
 
+.loginButtonActive {
+    opacity: 1;
+}
+
 .orPlaceholder {
     padding: 10px 40px 18px;
 }
@@ -94,4 +103,17 @@
     font-size: 13px;
 
     margin: 0 18px;
+}
+
+.loginWithFBContainer {
+    margin: 8px 40px;
+}
+
+.FBLogo {
+    background: url('https://static.cdninstagram.com/rsrc.php/v3/y5/r/TJztmXpWTmS.png');
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    
+    height: 16px;
+    width: 16px;
 }

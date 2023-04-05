@@ -1,0 +1,20 @@
+.container {
+    min-height: 740px;
+
+    flex-grow: 1;
+}
+
+.topNav {
+    justify-content: center;
+    align-items: center;
+
+    margin: 16px 16px 6px;
+
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+}
+
+.downArrow {
+    transform: rotate(180deg);
+    margin-left: 4px;
+}

@@ -17,7 +17,7 @@ export default function UserContentMobile() {
             <div className={`${styles.linkNav} flex`}>
                 <NavLink to='/sampleName'
                 end
-                className={`${styles.icon} flex`} e>
+                className={`${styles.icon} flex`}>
                     { ({isActive}) => isActive ? <div>{postsActiveSvg()}</div> : <div>{postsSvg()}</div>}
                 </NavLink>
 

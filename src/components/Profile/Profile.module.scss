@@ -6,6 +6,11 @@
     align-items: center;
 }
 
+.downChevronIcon {
+    transform: rotate(180deg);
+    padding: 8px;
+}
+
 .backIcon {
     transform: rotate(270deg);
 }
@@ -17,4 +22,28 @@
 
     font-weight: 600;
     color: rgb(0, 0, 0);
+}
+
+
+/*************************
+**************************
+*************************/
+
+.fullPage {
+    height: 100%;
+    width: 100%;
+
+    background-color: aqua;
+
+    z-index: 10;
+
+    position: fixed;
+}
+
+.hidden {
+    display: hidden;
+}
+
+.visible {
+    display: block;
 }

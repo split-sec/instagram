@@ -14,6 +14,11 @@ import ProfilePosts from '../../components/ProfilePosts/ProfilePosts';
 import { useViewport } from '../../helper/useViewport.jsx';
 import { ViewportProvider } from '../../helper/ViewPortContext.jsx';
 
+
+import Landing from '../Landing/Landing';
+import NewSignupLanding from '../../components/NewSignup/NewSignupLanding';
+import NewSignupPage from '../../components/NewSignup/NewSignUpPage/NewSignUpPage';
+
 function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
       width: undefined,
@@ -42,7 +47,7 @@ export default function HomePage() {
 
     return (
         <ViewportProvider>
-            <Routes>
+            {/* <Routes>
                 <Route path='/' element={
                     width < 480 ? <Home /> : <h1>Here</h1>
                 } />
@@ -56,7 +61,19 @@ export default function HomePage() {
                   <Route path='saved' element={<h1>Saved</h1>} />
                 </Route>
                 <Route path='/notifications' element={<Notifications />} />
+            </Routes> */}
+
+            {/********
+            **********
+            **********
+            **********
+            ****** */}
+
+            <Routes>
+              <Route path='/' element={<NewSignupLanding />} />
+              <Route path='accounts/signup/phone' element={<NewSignupPage />} />
             </Routes>
+    
         </ViewportProvider>
     );
 }

@@ -7,13 +7,28 @@ export default function LoginForm() {
 
     const loginText = useRef();
     const loginPassword = useRef();
+    const loginButton = useRef();
+
+    function loginEnable() {
+        if(loginDetail.length >= 6 && password.length >= 6) {
+            loginButton.current.classList.add(`${styles.loginButtonActive}`);
+            loginButton.current.disabled = true;
+        } else {
+            loginButton.current.classList.remove(`${styles.loginButtonActive}`);
+            loginButton.current.disabled = false;
+        }
+
+        console.log(loginButton.current.classList);
+    }
 
     function handleLoginDetail() {
         setLoginDetail(loginText.current.value);
+        loginEnable();        
     }
 
     function handlePassword() {
         setPassword(loginPassword.current.value);
+        loginEnable();
     }
 
     function clickedSubmit() {
@@ -50,6 +65,7 @@ export default function LoginForm() {
                 <div className={`${styles.instaLogo}`}></div>
             </div>
             <div className={`${styles.formPlaceholder} flex flex-col`}>
+
                 <div className={`${styles.inputPlaceholder}`}>
                     <div>
                         <label className={`${styles.label_input}flex flex-col`}>
@@ -65,12 +81,19 @@ export default function LoginForm() {
                     </div>
                 </div>
 
-                <button className={`${styles.loginButton}`} onClick={clickedSubmit}>Log in</button>
+                <button ref={loginButton} className={`${styles.loginButton}`} onClick={clickedSubmit} disabled={false}>Log in</button>
 
                 <div className={`${styles.orPlaceholder} flex`}>
                     <div className={`${styles.dashedLine}`}></div>
                     <div className={`${styles.or}`}>OR</div>
                     <div className={`${styles.dashedLine}`}></div>
+                </div>
+
+                <div className={`${styles.loginWithFBContainer}`}>
+                    <button>
+                        <span className={`${styles.FBLogo}`}></span>
+                        <span className={`${styles.FBText}`}>Login with Facebook</span>
+                    </button>
                 </div>
             </div>
         </div>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styles from './RightContainer.module.scss';
 import LoginForm from "../../LoginForm/LoginForm.jsx";
 
@@ -6,7 +8,7 @@ export default function RightContainer() {
         <div className={`${styles.loginContainer} flex flex-col`}>
             <LoginForm />
             <div className={`${styles.box} flex`}>
-                <p className={`${styles.cta}`}>Don't have an account? <a className={`${styles.ctaLink}`}>Sign up</a></p>
+                <p className={`${styles.cta}`}>Don't have an account? <Link to='accounts/emailsignup' className={`${styles.ctaLink}`}>Sign up</Link></p>
             </div>
             <div>Get the app.</div>
             <div>
