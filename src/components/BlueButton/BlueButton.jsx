@@ -1,9 +1,12 @@
+import { Navigate } from 'react-router-dom';
 import styles from './BlueButton.module.scss';
 
-export default function BlueButton() {
+export default function BlueButton({placeholderText}) {
+    let url = '';
     return (
-        <button className={`${styles.container} flex`}>
-            Get the Instagram app
+        //
+        <button className={`${styles.container} flex`} >
+            { placeholderText }
         </button>
     );
 }

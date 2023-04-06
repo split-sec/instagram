@@ -17,7 +17,12 @@ import { ViewportProvider } from '../../helper/ViewPortContext.jsx';
 
 import Landing from '../Landing/Landing';
 import NewSignupLanding from '../../components/NewSignup/NewSignupLanding';
-import NewSignupPage from '../../components/NewSignup/NewSignUpPage/NewSignUpPage';
+import NewSignUpPage from '../../components/NewSignup/NewSignUpPage/NewSignUpPage';
+import NewSignUpPagePhone from '../../components/NewSignup/NewSignUpPagePhone/NewSignUpPagePhone';
+import NewSignUpPageEmail from '../../components/NewSignup/NewSignUpPageEmail/NewSignUpPageEmail';
+import EmailConfirmationMobile from '../../components/NewSignup/EmailConfirmationMobile/EmailConfirmationMobile';
+import RegisterNameMobile from '../../components/NewSignup/RegisterNameMobile/RegisterNameMobile';
+
 
 function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
@@ -71,7 +76,13 @@ export default function HomePage() {
 
             <Routes>
               <Route path='/' element={<NewSignupLanding />} />
-              <Route path='accounts/signup/phone' element={<NewSignupPage />} />
+              <Route path='accounts/signup' element={<NewSignUpPage />}>
+                <Route path='phone' element={<NewSignUpPagePhone />} />
+                <Route path='email' element={<NewSignUpPageEmail />} />
+              </Route>
+              <Route path='accounts/signup/emailConfirmation' element={<EmailConfirmationMobile />} />
+              <Route path='accounts/signup/name' element={<RegisterNameMobile />} />
+              
             </Routes>
     
         </ViewportProvider>

@@ -31,7 +31,9 @@ export default function InputTextField(props) {
         if(inputText.length > 0) {
             console.log("greater than 0");
             label.current.classList.add(`${styles.placeholderTextActive}`);
-            buttonRef.current.classList.add(`${styles.buttonActive}`);            
+            // if(password) {
+            //     buttonRef.current.classList.add(`${styles.buttonActive}`);            
+            // }
         } else {
             label.current.classList.remove(`${styles.placeholderTextActive}`);
             // buttonRef.current.classList.remove(`${styles.buttonActive}`);

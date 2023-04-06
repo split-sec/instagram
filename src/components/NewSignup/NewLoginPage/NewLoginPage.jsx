@@ -17,7 +17,7 @@ export default function NewLoginPage() {
                 </div>
 
                 <div className={`${styles.buttonContainer}`}>
-                    <BlueButton />
+                    <BlueButton placeholderText="Continue using Facebook"/>
                 </div>
 
                 <OrSeparator />
@@ -31,7 +31,7 @@ export default function NewLoginPage() {
                 </div>
 
                 <div className={`${styles.buttonContainer}`}>
-                    <BlueButton />
+                    <BlueButton placeholderText="Login" style="width: 100%"/>
                 </div>
 
                 <div className={`${styles.signUp}`}>

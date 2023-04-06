@@ -1,3 +1,78 @@
 .container {
     min-height: 540;
 }
+
+.languageContainer {
+    margin: 16px 16px 6px;
+}
+
+.options {
+    background-image: url('https://static.cdninstagram.com/rsrc.php/v3/yV/r/6JqvJ6H_bFT.png');
+    background-size: 440px 411px;
+    background-position: -381px -329px;
+
+    opacity: 0.5;
+
+    height: 16px;
+    width: 16px;
+}
+
+.topNav {
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+
+    margin: auto;
+    
+    align-items: center;
+}
+
+.downArrow {
+    margin: 0 4px;
+    transform: rotate(180deg);
+}
+
+.bottomContainer {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+}
+
+/*****************************/
+
+.formContainer {
+    margin: 24px 40px 0 40px;
+    padding-bottom: 50vh;
+}
+
+.optionLink {
+    flex-grow: 1;
+
+    color:rgb(115, 115, 115);
+    font-size: 14px;
+}
+
+.option {
+    height: 44px;
+ 
+    border-bottom: 1px solid rgb(115, 115, 115);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.optionActive {
+    height: 44px;
+ 
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.topContainer {
+    margin-bottom: 32px;
+}
