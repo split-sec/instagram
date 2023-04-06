@@ -68,7 +68,7 @@ export default function LoginForm() {
 
                 <div className={`${styles.inputPlaceholder}`}>
                     <div>
-                        <label className={`${styles.label_input}flex flex-col`}>
+                        <label className={`${styles.label_input} flex flex-col`}>
                             <p className={`${styles.label}`}>Phone number, username or email address</p>
                             <input className={`${styles.input}`} type={'text'} ref={loginText} onChange={handleLoginDetail}/>
                         </label>
