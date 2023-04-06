@@ -17,6 +17,8 @@ export default function InputTextField(props) {
     }
 
     function handleClick() {
+        //correction needed
+        //For changing text from show to hide
         setShow((prev) => !prev);
         console.log(setShow);
         password = !password;
@@ -24,6 +26,8 @@ export default function InputTextField(props) {
     }
 
     useEffect(() => {
+        //correction needed
+        //For showing and hiding show button
         if(inputText.length > 0) {
             console.log("greater than 0");
             label.current.classList.add(`${styles.placeholderTextActive}`);

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import BlueButton from '../../BlueButton/BlueButton';
 import InstaLogo from '../../InstaLogo/InstaLogo';
 import FromMeta from '../../FromMeta/FromMeta';
@@ -23,6 +25,19 @@ export default function NewLoginPage() {
                 <InputTextField placeholder="Phone number, username or email address" button={false}/>
 
                 <InputTextField placeholder="Password" button={true} password={true}/>
+
+                <div className={`${styles.forgotPlaceholder} flex`}>
+                    Forgotten your password?
+                </div>
+
+                <div className={`${styles.buttonContainer}`}>
+                    <BlueButton />
+                </div>
+
+                <div className={`${styles.signUp}`}>
+                    Don't have an account? 
+                    <Link to='/accounts/signup/phone' className={`${styles.link}`}> Sign up</Link>
+                </div>
 
             </div>
 
