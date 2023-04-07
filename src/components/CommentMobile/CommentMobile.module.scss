@@ -1,0 +1,23 @@
+.commentContainer {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+
+    padding-left: 8px;
+
+    align-items: center;
+}
+
+.comment {
+    flex-grow: 1;
+}
+
+.comment span {
+    display: inline-block;
+
+    width: 4px;
+}
+
+.usernameText {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}

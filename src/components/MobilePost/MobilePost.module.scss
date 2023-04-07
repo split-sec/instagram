@@ -1,0 +1,121 @@
+.container {
+    width: 100%;
+}
+
+.topContainer {
+    align-items: center;
+
+    padding: 14px 8px 14px 16px;
+
+    border-bottom: 1px solid rgb(115, 115, 115);
+}
+
+.profilePictureContainer {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+
+    background-color: darkorange;
+}
+
+.contentContainer {
+    margin-left: 12px;
+
+    flex-grow: 1;
+}
+
+.usernameContainer {
+    align-items: center;
+}
+
+.usernameText {
+    font-size: 14px;
+    font-weight: 600;
+
+    align-items: center;
+}
+
+.verified {
+    height: 12px;
+    width: 12px;
+
+    margin-left: 4px;
+
+    background-size: 440px 411px;
+    background-position: -428px -142px;
+    background-image: url('https://static.cdninstagram.com/rsrc.php/v3/yV/r/6JqvJ6H_bFT.png');
+    background-repeat: no-repeat;
+}
+
+.audioText {
+    font-size: 12px;
+}
+
+.optionsContainer {
+    padding: 8px;
+}
+
+.photo {
+    height: 450px;
+}
+
+.bottomContainer {
+    padding: 0 8px;
+
+    min-height: 50px;
+}
+
+.activityContainer {
+    margin-top: 4px;
+    padding: 6px 0 8px;
+
+    align-items: center;
+}
+
+.logoContainer {
+    padding: 8px;
+}
+
+.leftContainer {
+    align-items: center;
+    flex-grow: 1;
+}
+
+.rightContainer {
+    align-items: center;
+}
+
+.likesContainer {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 14px;
+
+    padding: 0 8px;
+    margin-bottom: 8px;
+}
+
+.postContent {
+    padding-left: 8px;
+    margin-bottom: 4px;
+
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.postContent span {
+    display: inline-block;
+
+    width: 4px;
+}
+
+.usernameText {
+    color:rgb(0, 0, 0);
+}
+
+.commentCount {
+    padding-left: 8px;
+    margin-bottom: 4px;
+
+    font-size: 14px;
+    color:rgb(115, 115, 115);
+}

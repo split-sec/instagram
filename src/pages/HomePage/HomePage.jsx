@@ -52,7 +52,7 @@ export default function HomePage() {
 
     return (
         <ViewportProvider>
-            {/* <Routes>
+            <Routes>
                 <Route path='/' element={
                     width < 480 ? <Home /> : <h1>Here</h1>
                 } />
@@ -66,7 +66,7 @@ export default function HomePage() {
                   <Route path='saved' element={<h1>Saved</h1>} />
                 </Route>
                 <Route path='/notifications' element={<Notifications />} />
-            </Routes> */}
+            </Routes>
 
             {/********
             **********
@@ -74,7 +74,7 @@ export default function HomePage() {
             **********
             ****** */}
 
-            <Routes>
+            {/* <Routes>
               <Route path='/' element={<NewSignupLanding />} />
               <Route path='accounts/signup' element={<NewSignUpPage />}>
                 <Route path='phone' element={<NewSignUpPagePhone />} />
@@ -83,7 +83,7 @@ export default function HomePage() {
               <Route path='accounts/signup/emailConfirmation' element={<EmailConfirmationMobile />} />
               <Route path='accounts/signup/name' element={<RegisterNameMobile />} />
               
-            </Routes>
+            </Routes> */}
     
         </ViewportProvider>
     );
