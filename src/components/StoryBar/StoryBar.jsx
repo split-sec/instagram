@@ -4,7 +4,7 @@ import Story from '../Story/Story';
 export default function StoryBar() {
     return (
         <div className={`${styles.storyBar}`}>
-            <Story />
+            <Story ownStory={true}/>
         </div>
     )
 }
