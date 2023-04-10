@@ -5,7 +5,9 @@ export default function Inbox() {
     return (
         <>
             <TopNavBackWithLink />
-            <h1>Inbox</h1>
+            <div className={`${styles.container}`}>
+                
+            </div>
         </>
     );
 }

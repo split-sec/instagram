@@ -1,9 +1,8 @@
 .fullContainer {
-    height: 100px;
-
     align-items: center;
 
     padding: 0 4px;
+    width: 64px;
 }
 
 .image {
@@ -12,12 +11,16 @@
     width: 56px;
 
     border-radius: 50%;
+
+    margin: 4px auto 8px;
 }
 
 .username {
+    font-size: 12px;
+
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     
-    max-width: 74px;
+    max-width: 64px;
 }
