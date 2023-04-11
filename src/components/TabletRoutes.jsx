@@ -2,7 +2,8 @@ import { Route, Routes } from "react-router-dom";
 
 import Home from "./TabletsAndBeyond/Home/Home";
 import Explore from "./TabletsAndBeyond/Explore/Explore";
-import Reels from './Reels/Reels';
+import Reels from './TabletsAndBeyond/Reels/Reels';
+import Profile from "./TabletsAndBeyond/Profile/Profile";
 
 export default function TabletRoutes() {
     return (
@@ -11,7 +12,7 @@ export default function TabletRoutes() {
             <Route path='explore' element={<Explore />} />
             <Route path='reels' element={<Reels />} />
             <Route path='direct/inbox' element ={<h1>Inbox for Tablets and beyond</h1>} />
-            <Route path='sampleName' element={<h1>Profile for Tablets and beyond</h1>} ></Route>
+            <Route path='sampleName' element={<Profile />} />
         </Routes>
     );
 }

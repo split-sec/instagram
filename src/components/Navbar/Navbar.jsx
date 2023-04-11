@@ -139,7 +139,7 @@ export default function Navbar() {
                 </div>
 
                 <div className={`${styles.nav}`}>
-                    <NavLink to='sampleusername'>
+                    <NavLink to='sampleName'>
                         {({isActive}) => !isActive ? 
                             <div className={`${styles.navlinkButton} flex`}>
                                 <div className={`${styles.navlinkProfile}`}></div>

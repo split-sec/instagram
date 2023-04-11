@@ -1,0 +1,25 @@
+.container {
+    flex-grow: 1;
+}
+
+.topContainer {
+    margin: 24px 0;
+    padding: 60px 20px 0;
+}
+
+.header {
+    margin-bottom: 44px;
+}
+
+.headerLeft {
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.picturePlaceholder {
+    height: 150px;
+    width: 150px;
+
+    background-color: brown;
+}
