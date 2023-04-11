@@ -1,0 +1,34 @@
+.container {
+    border-top: 1px solid rgb(215, 215, 215);
+}
+
+.link {
+    color: rgb(0, 0, 0);
+    padding: 16px 16px 16px 30px;
+
+    border-left: 2px solid rgb(255, 255, 255);
+}
+
+.link:hover {
+    border-left: 2px solid rgb(215, 215, 215);
+}
+
+.linkText {
+    font-size: 14px;
+    color:rgb(0, 0, 0);
+}
+
+.linkActive {
+    border-left: 1px solid rgb(255, 255, 255);
+
+    font-weight: 600;
+}
+
+.professionalAccount {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 149, 246);
+
+    margin-left: 16px;
+    padding: 16px;
+}

@@ -3,8 +3,10 @@
 }
 
 .topContainer {
-    margin: 24px 0;
-    padding: 60px 20px 0;
+    margin: 0 24px;
+    padding: 30px 20px 0;
+
+    border-bottom: 1px solid rgb(239, 239, 239);
 }
 
 .header {
@@ -13,8 +15,9 @@
 
 .headerLeft {
     margin-right: 30px;
-    align-items: center;
-    justify-content: center;
+
+    flex-basis: 30px;
+    flex-grow: 1;
 }
 
 .picturePlaceholder {
@@ -22,4 +25,70 @@
     width: 150px;
 
     background-color: brown;
+}
+
+.headerRight {
+    flex-grow: 2;
+}
+
+.row1 {
+    margin-bottom: 20px;
+
+    align-items: center;
+}
+
+.username {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.greyButton {
+    margin-left: 20px;
+    padding: 0 20px;
+
+    height: 32px;
+
+    background-color: rgb(239, 239, 239);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+
+    border-radius: 8px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.settingsButton {
+    margin-left: 8px;
+    padding: 8px;
+}
+
+.row2 {
+    margin-bottom: 20px;
+}
+
+.userStat {
+    margin-right: 30px;
+
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.userStat:nth-child(3) {
+    margin-right: 0;
+}
+
+.userStat span {
+    font-weight: 600;
+}
+
+.row3 {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.row3 span {
+    font-weight: 600;
 }

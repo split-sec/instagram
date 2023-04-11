@@ -1,0 +1,22 @@
+h1 {
+    color: red;
+}
+
+.parentContainer {
+    width: 100%;
+    justify-content: center;
+}
+
+.container {
+    margin: 30px auto 0;
+
+    max-width: 935px;
+
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+}
+
+.rightContainer {
+    flex-basis: 400px;
+    min-width: 50px;
+}

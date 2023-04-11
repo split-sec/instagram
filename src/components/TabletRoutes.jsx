@@ -4,6 +4,8 @@ import Home from "./TabletsAndBeyond/Home/Home";
 import Explore from "./TabletsAndBeyond/Explore/Explore";
 import Reels from './TabletsAndBeyond/Reels/Reels';
 import Profile from "./TabletsAndBeyond/Profile/Profile";
+import Settings from "./TabletsAndBeyond/Settings/Settings";
+import EditSettings from './TabletsAndBeyond/Settings/EditSettings/EditSettings';
 
 export default function TabletRoutes() {
     return (
@@ -13,6 +15,8 @@ export default function TabletRoutes() {
             <Route path='reels' element={<Reels />} />
             <Route path='direct/inbox' element ={<h1>Inbox for Tablets and beyond</h1>} />
             <Route path='sampleName' element={<Profile />} />
+            <Route path='accounts/:id' element={<Settings />}>
+            </Route>
         </Routes>
     );
 }

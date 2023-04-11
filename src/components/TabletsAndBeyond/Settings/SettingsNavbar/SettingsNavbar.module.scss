@@ -1,0 +1,49 @@
+.parentContainer {
+    flex-basis: 240px;
+}
+
+.settingsInfo {
+    margin: 28px 20px 16px 32px;
+
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    line-height: 18px;
+}
+
+.row1 {
+    font-weight: 600;
+
+    margin-top: 16px;
+}
+
+.row2 {
+    font-size: 14px;
+
+    margin-top: 16px;
+}
+
+.row3 {
+    color: rgb(0, 149, 246);
+
+    margin-top: 16px;
+}
+
+.settingsInfoFooter {
+    padding: 28px 20px 28px 32px;
+}
+
+.fRow1 {
+    margin-top: 16px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0, 149, 246);
+}
+
+.fRow2 {
+    margin-top: 16px;
+
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(115, 115, 115);
+}
