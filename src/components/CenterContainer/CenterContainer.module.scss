@@ -1,6 +1,9 @@
 .centerContainer {
-    max-width: 630px;
-    background-color: aquamarine;
+    width: 630px;
+    // width: 100%;
+    margin-right: 64px;
+
+    // background-color: aquamarine;
 
     flex-grow: 1;
 }

@@ -8,8 +8,10 @@ export default function Home() {
     return (
         <div className="flex">
             <Navbar />
-            <CenterContainer />
-            <RightContainer />
+            <div className={`${styles.container} flex`}>
+                <CenterContainer />
+                <RightContainer />
+            </div>
         </div>
     );
 }

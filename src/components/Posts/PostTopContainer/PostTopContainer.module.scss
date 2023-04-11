@@ -1,0 +1,52 @@
+.topContainer {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detailsContainer {
+    margin: 8px 4px 8px 5px;
+
+    max-width: calc(100% - 48px);
+
+    flex-grow: 1;
+
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.profilePicture {
+    height: 32px;
+    width: 32px;
+
+    background-color: coral;
+    border-radius: 50%;
+}
+
+.profileContainer {
+    margin-left: 10px;
+}
+
+.verified {
+    margin-left: 4px;
+
+    background-repeat: no-repeat;
+    background-position: -244px -369px;
+    background: url('https://static.cdninstagram.com/rsrc.php/v3/y5/r/TJztmXpWTmS.png');
+
+    height: 12px;
+    width: 12px;
+}
+
+.usernameHead {
+    font-weight: 600;
+}
+
+.dividerDot {
+    color: rgb(115, 115, 115);
+    margin: 0 4px;
+}
+
+.followText {
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+}

@@ -1,9 +1,10 @@
+import Posts from '../Posts/Posts';
 import styles from './CenterContainer.module.scss';
 
 export default function CenterContainer() {
     return (
         <div className={`${styles.centerContainer}`}>
-            <h1>Center Container</h1>
+            <Posts />
         </div>
     );
 }

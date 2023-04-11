@@ -1,0 +1,149 @@
+{
+    "message": "post retreived successfully!",
+    "post": [
+        {
+            "postid": 86,
+            "userid": 16,
+            "urllink": [
+                "http://res.cloudinary.com/dkl52nx7z/image/upload/v1680850162/Instagram/post/img/q6ptykzrshryuk1fwnt1.jpg"
+            ],
+            "caption": "This is my first post#love",
+            "music": null,
+            "likes": null,
+            "tags": [
+                "gokul",
+                "nisanth"
+            ],
+            "time": "2023-04-07T06:49:22.714Z",
+            "hashtagcontent": "#love"
+        },
+        {
+            "postid": 85,
+            "userid": 16,
+            "urllink": [
+                "http://res.cloudinary.com/dkl52nx7z/image/upload/v1680850157/Instagram/post/img/d764rakhbgvgnqkzd7r7.jpg"
+            ],
+            "caption": "This is my first post#love",
+            "music": null,
+            "likes": null,
+            "tags": [
+                "gokul",
+                "nisanth"
+            ],
+            "time": "2023-04-07T06:49:18.213Z",
+            "hashtagcontent": "#love"
+        },
+        {
+            "postid": 84,
+            "userid": 16,
+            "urllink": [
+                "http://res.cloudinary.com/dkl52nx7z/image/upload/v1680850154/Instagram/post/img/gng1olkggkmvv1zdf3ew.jpg"
+            ],
+            "caption": "This is my first post#love",
+            "music": null,
+            "likes": null,
+            "tags": [
+                "gokul",
+                "nisanth"
+            ],
+            "time": "2023-04-07T06:49:15.566Z",
+            "hashtagcontent": "#love"
+        },
+        {
+            "postid": 83,
+            "userid": 16,
+            "urllink": [
+                "http://res.cloudinary.com/dkl52nx7z/image/upload/v1680850151/Instagram/post/img/aw8ykbbwqapaeozg0gov.jpg"
+            ],
+            "caption": "This is my first post#love",
+            "music": null,
+            "likes": null,
+            "tags": [
+                "gokul",
+                "nisanth"
+            ],
+            "time": "2023-04-07T06:49:12.376Z",
+            "hashtagcontent": "#love"
+        },
+        {
+            "postid": 82,
+            "userid": 16,
+            "urllink": [
+                "http://res.cloudinary.com/dkl52nx7z/image/upload/v1680850139/Instagram/post/img/rgzkx7vp0mjvcxwd4udr.jpg"
+            ],
+            "caption": "This is my first post#love",
+            "music": null,
+            "likes": null,
+            "tags": [
+                "gokul",
+                "nisanth"
+            ],
+            "time": "2023-04-07T06:48:59.374Z",
+            "hashtagcontent": "#love"
+        },
+        {
+            "postid": 81,
+            "userid": 16,
+            "urllink": [
+                "http://res.cloudinary.com/dkl52nx7z/image/upload/v1680850136/Instagram/post/img/i97cdt80b1leggtr0lzk.jpg"
+            ],
+            "caption": "This is my first post#love",
+            "music": null,
+            "likes": null,
+            "tags": [
+                "gokul",
+                "nisanth"
+            ],
+            "time": "2023-04-07T06:48:56.918Z",
+            "hashtagcontent": "#love"
+        },
+        {
+            "postid": 80,
+            "userid": 16,
+            "urllink": [
+                "http://res.cloudinary.com/dkl52nx7z/image/upload/v1680850134/Instagram/post/img/cmjmmkhytgvalca7sdua.jpg"
+            ],
+            "caption": "This is my first post#love",
+            "music": null,
+            "likes": null,
+            "tags": [
+                "gokul",
+                "nisanth"
+            ],
+            "time": "2023-04-07T06:48:54.466Z",
+            "hashtagcontent": "#love"
+        },
+        {
+            "postid": 79,
+            "userid": 16,
+            "urllink": [
+                "http://res.cloudinary.com/dkl52nx7z/image/upload/v1680850131/Instagram/post/img/u3z4wt024ns6xuifxjfy.jpg"
+            ],
+            "caption": "This is my first post#love",
+            "music": null,
+            "likes": null,
+            "tags": [
+                "gokul",
+                "nisanth"
+            ],
+            "time": "2023-04-07T06:48:52.213Z",
+            "hashtagcontent": "#love"
+        },
+        {
+            "postid": 78,
+            "userid": 16,
+            "urllink": [
+                "http://res.cloudinary.com/dkl52nx7z/image/upload/v1680850129/Instagram/post/img/mgbwyhja2fspnyx05vpy.jpg"
+            ],
+            "caption": "This is my first post#love",
+            "music": null,
+            "likes": null,
+            "tags": [
+                "gokul",
+                "nisanth"
+            ],
+            "time": "2023-04-07T06:48:49.865Z",
+            "hashtagcontent": "#love"
+        }
+    ]
+}
