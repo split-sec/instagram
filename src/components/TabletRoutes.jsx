@@ -10,11 +10,11 @@ export default function TabletRoutes() {
     return (
         <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='explore' element={<Explore />} />
-            <Route path='reels' element={<Reels />} />
-            <Route path='direct/inbox' element ={<h1>Inbox for Tablets and beyond</h1>} />
-            <Route path='sampleName' element={<Profile />} />
-            <Route path='accounts/:id' element={<Settings />}>
+            <Route path='/explore' element={<Explore />} />
+            <Route path='/reels' element={<Reels />} />
+            <Route path='/direct/inbox' element ={<h1>Inbox for Tablets and beyond</h1>} />
+            <Route path='/sampleName' element={<Profile />} />
+            <Route path='/accounts/edit' element={<Settings />}>
             </Route>
         </Routes>
     );

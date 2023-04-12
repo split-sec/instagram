@@ -1,0 +1,57 @@
+.container {
+    margin: 24px 40px 0;
+    justify-content: center;
+}
+
+.imagePlaceholder {
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+.image {
+    background-size: 553px 528px;
+    background-position: 0 0;
+    background: url('https://static.cdninstagram.com/rsrc.php/v3/yz/r/quLU_xi5ZD1.png');
+    background-repeat: no-repeat;
+
+    height: 96px;
+    width: 144px;
+}
+
+.boldText {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    text-align: center;
+
+    margin-bottom: 16px;
+}
+
+.info {
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(115, 115, 115);
+    text-align: center;
+
+    margin-bottom: 16px;
+}
+
+.linkText {
+    color: rgb(0, 149, 246);
+}
+
+.infoSmall {
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-bottom: 0;
+}
+
+.forMargin {
+    width: 100%;
+
+    margin: 16px 0;
+}

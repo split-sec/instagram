@@ -9,7 +9,7 @@ export default function EmailConfirmationMobile() {
 
     return (
         <>
-            <TopNavBackWithLink />
+            <TopNavBackWithLink rightLogo={<></>} middleText={"Register"} options={false}/>
             <div className={`${styles.container} flex flex-col`}>
                 <div className={`${styles.header}`}>Enter confirmation code</div>
 
@@ -20,7 +20,9 @@ export default function EmailConfirmationMobile() {
 
                 <InputTextField placeholder="Confirmation code" />
 
-                <BlueButton />
+                <div className={`${styles.forMargin}`}>
+                    <BlueButton placeholderText={"Next"}/>
+                </div>
             </div>
         </>
     );

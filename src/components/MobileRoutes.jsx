@@ -14,6 +14,7 @@ import NewSignUpPagePhone from './NewSignup/NewSignUpPagePhone/NewSignUpPagePhon
 import NewSignUpPageEmail from './NewSignup/NewSignUpPageEmail/NewSignUpPageEmail';
 import EmailConfirmationMobile from './NewSignup/EmailConfirmationMobile/EmailConfirmationMobile';
 import RegisterNameMobile from './NewSignup/RegisterNameMobile/RegisterNameMobile';
+import RegisterBirthdayMobile from './NewSignup/RegisterBirthdayMobile/RegisterBirthdayMobile';
 
 export default function MobileRoutes() {
     const loggedIn = false;
@@ -23,23 +24,24 @@ export default function MobileRoutes() {
             <Route path='/' element={loggedIn ? <Home /> : <NewSignupLanding />} />
             {!loggedIn ? 
             <>
-                <Route path='accounts/signup' element={<NewSignUpPage />}>
-                    <Route path='phone' element={<NewSignUpPagePhone />} />
-                    <Route path='email' element={<NewSignUpPageEmail />} />
+                <Route path='/accounts/signup' element={<NewSignUpPage />}>
+                    <Route path='/accounts/signup/phone' element={<NewSignUpPagePhone />} />
+                    <Route path='/accounts/signup/email' element={<NewSignUpPageEmail />} />
                 </Route>
-                <Route path='accounts/signup/emailConfirmation' element={<EmailConfirmationMobile />} />
-                <Route path='accounts/signup/name' element={<RegisterNameMobile />} />
+                <Route path='/accounts/signup/emailConfirmation' element={<EmailConfirmationMobile />} />
+                <Route path='/accounts/signup/name' element={<RegisterNameMobile />} />
+                <Route path='/accounts/signup/birthday' element={<RegisterBirthdayMobile />} />
             </>
             :
             <></>}
-            <Route path='explore' element ={<Explore />} />
-            <Route path='reels' element ={<Reels />} />
-            <Route path='direct/inbox' element ={<Inbox />} />
-            <Route path='sampleName' element={<Profile />} >
+            <Route path='/explore' element ={<Explore />} />
+            <Route path='/reels' element ={<Reels />} />
+            <Route path='/direct/inbox' element ={<Inbox />} />
+            <Route path='/sampleName' element={<Profile />} >
                 <Route path='' element={<ProfilePosts /> } />
-                <Route path='feed' element={<h1>Feed</h1>} />
-                <Route path='tagged' element={<h1>Tagged</h1>} />
-                <Route path='saved' element={<h1>Saved</h1>} />
+                <Route path='/sampleName/feed' element={<h1>Feed</h1>} />
+                <Route path='/sampleName/tagged' element={<h1>Tagged</h1>} />
+                <Route path='/sampleName/saved' element={<h1>Saved</h1>} />
             </Route>
             <Route path='/notifications' element={<Notifications />} />
         </Routes>
