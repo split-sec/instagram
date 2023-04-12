@@ -8,10 +8,30 @@ import Profile from './Profile/Profile';
 import Notifications from './Notifications/Notifications';
 import ProfilePosts from './ProfilePosts/ProfilePosts';
 
+import NewSignupLanding from './NewSignup/NewSignupLanding';
+import NewSignUpPage from './NewSignup/NewSignUpPage/NewSignUpPage';
+import NewSignUpPagePhone from './NewSignup/NewSignUpPagePhone/NewSignUpPagePhone';
+import NewSignUpPageEmail from './NewSignup/NewSignUpPageEmail/NewSignUpPageEmail';
+import EmailConfirmationMobile from './NewSignup/EmailConfirmationMobile/EmailConfirmationMobile';
+import RegisterNameMobile from './NewSignup/RegisterNameMobile/RegisterNameMobile';
+
 export default function MobileRoutes() {
+    const loggedIn = false;
+
     return (
         <Routes>
-            <Route path='/' element={<Home />} /> 
+            <Route path='/' element={loggedIn ? <Home /> : <NewSignupLanding />} />
+            {!loggedIn ? 
+            <>
+                <Route path='accounts/signup' element={<NewSignUpPage />}>
+                    <Route path='phone' element={<NewSignUpPagePhone />} />
+                    <Route path='email' element={<NewSignUpPageEmail />} />
+                </Route>
+                <Route path='accounts/signup/emailConfirmation' element={<EmailConfirmationMobile />} />
+                <Route path='accounts/signup/name' element={<RegisterNameMobile />} />
+            </>
+            :
+            <></>}
             <Route path='explore' element ={<Explore />} />
             <Route path='reels' element ={<Reels />} />
             <Route path='direct/inbox' element ={<Inbox />} />

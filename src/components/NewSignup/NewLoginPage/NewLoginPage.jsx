@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, Navigate } from 'react-router-dom';
 
 import BlueButton from '../../BlueButton/BlueButton';
 import InstaLogo from '../../InstaLogo/InstaLogo';
@@ -9,6 +10,9 @@ import OrSeparator from '../../OrSeparator/OrSeparator';
 import InputTextField from '../../InputTextField/InputTextField';
 
 export default function NewLoginPage() {
+    const [loginText, setLoginText] = useState("");
+    const [passwordText, setPasswordText] = useState("");
+
     return (
         <>
             <div className={`${styles.container} flex flex-col`}>
@@ -22,16 +26,27 @@ export default function NewLoginPage() {
 
                 <OrSeparator />
 
-                <InputTextField placeholder="Phone number, username or email address" button={false}/>
+                <InputTextField 
+                    placeholder="Phone number, username or email address" 
+                    button={false} 
+                    inputText={loginText} 
+                    setInputText={setLoginText}/>
 
-                <InputTextField placeholder="Password" button={true} password={true}/>
+                <InputTextField 
+                    placeholder="Password" 
+                    button={true} 
+                    password={true}
+                    inputText={passwordText} 
+                    setInputText={setPasswordText}/>
 
-                <div className={`${styles.forgotPlaceholder} flex`}>
-                    Forgotten your password?
-                </div>
+                <Link to='/' className={`${styles.align}`}>
+                    <div className={`${styles.forgotPlaceholder} flex`}>
+                        Forgotten your password?
+                    </div>
+                </Link>
 
                 <div className={`${styles.buttonContainer}`}>
-                    <BlueButton placeholderText="Login" style="width: 100%"/>
+                    <BlueButton placeholderText="Login" />
                 </div>
 
                 <div className={`${styles.signUp}`}>

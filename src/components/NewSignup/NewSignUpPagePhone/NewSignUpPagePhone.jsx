@@ -17,7 +17,11 @@ export default function NewSignUpPagePhone() {
                 </div>
             </div>
 
-            <BlueButton />
+            <div className={`${styles.infoText}`}>You may receive SMS notifications from us for security and login purposes.</div>
+
+            <div className={`${styles.buttonPlaceholder}`}>
+                <BlueButton placeholderText={"Next"}/>
+            </div>
         </>
     );
 }

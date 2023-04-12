@@ -5,7 +5,6 @@ import Explore from "./TabletsAndBeyond/Explore/Explore";
 import Reels from './TabletsAndBeyond/Reels/Reels';
 import Profile from "./TabletsAndBeyond/Profile/Profile";
 import Settings from "./TabletsAndBeyond/Settings/Settings";
-import EditSettings from './TabletsAndBeyond/Settings/EditSettings/EditSettings';
 
 export default function TabletRoutes() {
     return (

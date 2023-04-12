@@ -8,6 +8,13 @@ import styles from './NewSignUpPage.module.scss';
 
 export default function NewSignUpPage() {
     let activeStatus = false;
+    const myStyles = {
+        backgroundPostion: "-364px -329px",
+        backgroundSize: "440px 411px",
+        height: "16px",
+        width: "16px",
+        marginRight: "8px",
+    }
 
     return (
         <div className={`${styles.container} flex flex-col`}>
@@ -61,7 +68,14 @@ export default function NewSignUpPage() {
 
 
             <div className={`${styles.bottomContainer}`}>
-                <BlueButton />
+                <BlueButton placeholderText={
+                    <>
+                        <img src="https://static.cdninstagram.com/rsrc.php/v3/yV/r/6JqvJ6H_bFT.png" 
+                            style={myStyles}
+                        />
+                        <p>Sign Up with Facebook</p>
+                    </>
+                }/>
             </div>
         </div>
     );
