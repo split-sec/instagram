@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Home from './Home/Home';
@@ -17,11 +18,11 @@ import RegisterNameMobile from './NewSignup/RegisterNameMobile/RegisterNameMobil
 import RegisterBirthdayMobile from './NewSignup/RegisterBirthdayMobile/RegisterBirthdayMobile';
 
 export default function MobileRoutes() {
-    const loggedIn = false;
+    const [loggedIn, setLoggedIn] = useState(false);
 
     return (
         <Routes>
-            <Route path='/' element={loggedIn ? <Home /> : <NewSignupLanding />} />
+            <Route path='/' element={loggedIn ? <Home /> : <NewSignupLanding setLoggedIn={setLoggedIn}/>} />
             {!loggedIn ? 
             <>
                 <Route path='/accounts/signup' element={<NewSignUpPage />}>

@@ -9,7 +9,7 @@ import InputTextField from '../../InputTextField/InputTextField';
 
 import styles from './NewLoginPage.module.scss';
 
-export default function NewLoginPage() {
+export default function NewLoginPage({setLoggedIn}) {
     const [loginText, setLoginText] = useState({
         username: "",
         password: "",
@@ -19,9 +19,36 @@ export default function NewLoginPage() {
     
     function handleStateChange(e) {
         let obj = {...loginText};
-        console.log(e.target.name);
         obj[e.target.name] = e.target.value;
         setLoginText(obj);
+    }
+
+    function handleClick() {
+        try {
+            var data = {
+                firstdata: `${loginText.username}`,
+                password: `${loginText.password}`,
+            };
+        
+            const url = new URL(`${process.env.REACT_APP_DOMAIN}/signin`);
+
+            var requestOptions = {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: { 'Content-Type': 'application/json' },
+            };
+        
+            fetch(url, requestOptions)
+                .then((response) => response.json())
+                .then((result) => {
+                    if(result.message === 'Authorized user!') {
+                        setLoggedIn(true);
+                    }
+                })
+                .catch((error) => console.log("Error shot ->", error));
+        } catch(err) {
+            console.log('error-->', err);
+        }
     }
 
     useEffect(() => {
@@ -69,9 +96,8 @@ export default function NewLoginPage() {
                     </Link>
 
                     <div className={`${styles.buttonContainer}`}>
-                        <BlueButton placeholderText="Log in" url={`${process.env.REACT_APP_DOMAIN}`}
+                        <BlueButton placeholderText="Log in" handleClick={handleClick}
                             style={!buttonState ? {backgroundColor:"rgba(0,149,246, 0.7"} : {}}
-                            disabled={buttonState}
                         />
                     </div>
 

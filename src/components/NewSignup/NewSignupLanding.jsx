@@ -9,7 +9,7 @@ import Footer from '../Footer/Footer';
 import styles from './NewSignupLanding.module.scss';
 
 
-export default function NewSignupLanding() {
+export default function NewSignupLanding({setLoggedIn}) {
     const [basePage, setBasePage] = useState(true);
 
     return (
@@ -20,7 +20,7 @@ export default function NewSignupLanding() {
             </div>
 
 
-            { basePage ? <NewSignupOption setBasePage={setBasePage}/> : <NewLoginPage /> }
+            { basePage ? <NewSignupOption setBasePage={setBasePage}/> : <NewLoginPage setLoggedIn={setLoggedIn}/> }
 
             <Footer />
         </div>
