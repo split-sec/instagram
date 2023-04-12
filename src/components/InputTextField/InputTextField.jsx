@@ -1,9 +1,9 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useContext } from 'react';
 
 import styles from './InputTextField.module.scss';
 
 export default function InputTextField(props) {
-    let { placeholder, button, password, loginText, setLoginText } = props;
+    let { placeholder, button, password, id} = props;
 
     const input = useRef();
     const label = useRef();
@@ -42,7 +42,7 @@ export default function InputTextField(props) {
                     <p className={`${styles.placeholderText}`} ref={label}>{placeholder}</p>
                 </div>
 
-                <input className={`${styles.inputPlaceholder}`} type={show ? "password" : "text"} onChange={handleChange} ref={input}></input>
+                <input className={`${styles.inputPlaceholder}`} type={password ? show ? "password" : "text" : "text"} onChange={handleChange} ref={input}></input>
 
                 {button ? <button className={`${styles.button}`} onClick={handleClick} ref={buttonRef}>{show ? "Show" : "Hide"}</button> : <></>}
             </div>

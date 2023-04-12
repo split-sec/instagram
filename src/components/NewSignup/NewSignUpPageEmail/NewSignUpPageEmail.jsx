@@ -1,3 +1,4 @@
+import InputTextField from '../../InputTextField/InputTextField';
 import BlueButton from '../../BlueButton/BlueButton';
 
 import styles from './NewSignUpPageEmail.module.scss';
@@ -7,11 +8,13 @@ export default function NewSignUpPageEmail() {
         <>
             <div>
                 <div className={`${styles.form}`}>
-                    <input className={`${styles.formInput}`} placeholder="Phone number"></input>
+                    <InputTextField placeholder="Email address" password={false}/>
                 </div>
             </div>
 
-            <BlueButton />
+            <div className={`${styles.forMargin}`}>
+                <BlueButton placeholderText={"Next"}/>
+            </div>
         </>
     );
 }

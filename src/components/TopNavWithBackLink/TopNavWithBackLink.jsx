@@ -4,7 +4,7 @@ import { downChevronSvg, newMessageSvg, lesserSvg } from '../assets/Icons';
 
 import styles from './TopNavWithBackLink.module.scss';
 
-export default function TopNavBackWithLink({ leftLogo, rightLogo }) {
+export default function TopNavBackWithLink({ leftLogo, middleText, rightLogo, options }) {
     return (
         <>
             <div className={`${styles.topNav} flex`}>
@@ -15,9 +15,9 @@ export default function TopNavBackWithLink({ leftLogo, rightLogo }) {
                 </Link>
 
                 <div className={`${styles.namePlaceholder} flex`}>
-                    <div>{`sampleusername`}</div>
+                    <div>{middleText}</div>
                     <div className={`${styles.downChevronIcon}`}>
-                        { downChevronSvg() }
+                        { options ? downChevronSvg() : <></> }
                     </div>
                 </div>
                 <div className={`${styles.newMessageIcon}`}>

@@ -18,7 +18,7 @@ export default function NewSignUpPage() {
 
     return (
         <div className={`${styles.container} flex flex-col`}>
-            <TopNavWithBackLink />
+            <TopNavWithBackLink middleText={"Register"} rightLogo={<></>} options={false}/>
 
             <div className={`${styles.languageContainer} flex`}>
                 <button className={`${styles.optionsContainer}`}>
@@ -63,7 +63,9 @@ export default function NewSignUpPage() {
                     </div>
                 </div>
 
-                <Outlet />
+                <div className={`${styles.forMargin}`}>
+                    <Outlet />
+                </div>
             </div>
 
 
