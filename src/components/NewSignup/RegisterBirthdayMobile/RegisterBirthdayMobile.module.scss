@@ -50,6 +50,50 @@
     margin-bottom: 0;
 }
 
+.dateSelectorSection {
+    margin-bottom: 16px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.infoContainer {
+    align-items: center;
+    justify-content: center;
+}
+
+.selectTag {
+    padding: 0 24px 0 8px;
+    height: 36px;
+
+    outline: none;
+    border: 1px solid rgb(215, 215, 215);
+    background-color: rgb(255, 255, 255);
+    color: rgb(115, 115, 115);
+    appearance: none;
+
+    margin: 0 8px 8px 0;
+}
+
+.selectTag:nth-child(3) {
+    margin: 0 0 8px 0;
+}
+
+.downChevron {
+    background-size: 440px 411px;
+    background-position: -428px -77px;
+    background-image: url('https://static.cdninstagram.com/rsrc.php/v3/yV/r/6JqvJ6H_bFT.png');
+    background-repeat: no-repeat;
+    background-position: -358px -286px;
+
+    position: relative;
+    right: 7px;
+    top: 12px;
+
+    height: 12px;
+    width: 12px;
+}
+
 .forMargin {
     width: 100%;
 
