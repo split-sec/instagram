@@ -3,7 +3,7 @@ import { useEffect, useState, useRef, useContext } from 'react';
 import styles from './InputTextField.module.scss';
 
 export default function InputTextField(props) {
-    let { placeholder, button, password, id} = props;
+    let { placeholder, button, password, handleStateChange, name} = props;
 
     const input = useRef();
     const label = useRef();
@@ -22,7 +22,6 @@ export default function InputTextField(props) {
 
     useEffect(() => {
         if(inputText.length > 0) {
-            console.log("greater than 0");
             label.current.classList.add(`${styles.placeholderTextActive}`);
             if(password) {
                 buttonRef.current.classList.add(`${styles.buttonActive}`);            
@@ -42,7 +41,7 @@ export default function InputTextField(props) {
                     <p className={`${styles.placeholderText}`} ref={label}>{placeholder}</p>
                 </div>
 
-                <input className={`${styles.inputPlaceholder}`} type={password ? show ? "password" : "text" : "text"} onChange={handleChange} ref={input}></input>
+                <input className={`${styles.inputPlaceholder}`} name={name} type={password ? show ? "password" : "text" : "text"} onChange={(e) => {handleStateChange(e);handleChange()}} ref={input}></input>
 
                 {button ? <button className={`${styles.button}`} onClick={handleClick} ref={buttonRef}>{show ? "Show" : "Hide"}</button> : <></>}
             </div>
