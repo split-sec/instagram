@@ -1,20 +1,11 @@
 ----------------------------------------------------
 Design part
-- Posts (TnB)
-- 
-- Story horizontal navigation (Mobile)
-- You've completely caught up (Mobile)
-- Suggestions for you (Mobile)
-- Top single line loading animation (Mobile)
-- Login (Both mobile and TnB)
-- Signup (Both mobile and TnB)
-- Homepage (TnB)
-- Posts (TnB)
+-
 ----------------------------------------------------
 Functionality part
-- Componentisation
-- Input form changing on input
-- Animation for changing screens in the mobile mockup
-- Post sample JSON data
 - 
 ----------------------------------------------------
+
+APIs needed
+- Notification history
+- Suggested for you

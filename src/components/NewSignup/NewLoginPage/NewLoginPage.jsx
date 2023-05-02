@@ -42,6 +42,7 @@ export default function NewLoginPage({setLoggedIn}) {
                 .then((response) => response.json())
                 .then((result) => {
                     if(result.message === 'Authorized user!') {
+                        console.log(result);
                         setLoggedIn(true);
                     }
                 })
@@ -97,7 +98,7 @@ export default function NewLoginPage({setLoggedIn}) {
 
                     <div className={`${styles.buttonContainer}`}>
                         <BlueButton placeholderText="Log in" handleClick={handleClick}
-                            style={!buttonState ? {backgroundColor:"rgba(0,149,246, 0.7"} : {}}
+                            style={!buttonState ? {backgroundColor:"rgba(0,149,246, 0.7", padding:"7px 16px"} : {padding:"7px 16px"}}
                         />
                     </div>
 
