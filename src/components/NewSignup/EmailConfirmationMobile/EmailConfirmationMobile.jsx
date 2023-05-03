@@ -7,7 +7,9 @@ import { useState } from 'react';
 
 export default function EmailConfirmationMobile() {
     const emailaddress = "prathap@gmail.com";
+    
     const [otp, setOtp] = useState("");
+    const [buttonState, setButtonState] = useState(false);
 
     function handleStateChange(e) {
         setOtp(e.target.value);
@@ -27,7 +29,9 @@ export default function EmailConfirmationMobile() {
                 <InputTextField handleStateChange={handleStateChange} placeholder="Confirmation code" />
 
                 <div className={`${styles.forMargin}`}>
-                    <BlueButton style={{padding: "13px 20px", lineHeight: "18px"}} placeholderText={"Next"}/>
+                    <BlueButton placeholderText={"Next"}
+                        style={!buttonState ? {backgroundColor:"rgba(0,149,246, 0.7", padding:"13px 20px"} : {padding:"13px 120px"}}
+                    />
                 </div>
             </div>
         </>

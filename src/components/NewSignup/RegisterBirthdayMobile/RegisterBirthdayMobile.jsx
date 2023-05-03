@@ -61,7 +61,7 @@ export default function RegisterBirthdayMobile() {
                 </div>
 
                 <div className={`${styles.forMargin}`}>
-                    <BlueButton placeholderText={"Next"} />
+                    <BlueButton style={{padding: "13px 20px", lineHeight: "18px"}} placeholderText={"Next"} />
                 </div>
             </div>
         </div>

@@ -6,8 +6,16 @@ import styles from './RegisterNameMobile.module.scss';
 import { useState } from 'react';
 
 export default function RegisterNameMobile() {
-    const [fullname, setFullname] = useState("");
-    const [password, setPassword] = useState("");
+    const [loginText, setLoginText] = useState({
+        fullname: "",
+        password: "",
+    });
+
+    function handleStateChange(e) {
+        let obj = {...loginText};
+        obj[e.target.name] = e.target.value;
+        setLoginText(obj);
+    }
 
     return (
         <>
@@ -19,9 +27,9 @@ export default function RegisterNameMobile() {
                     Add your name so that friends can find you.
                 </div>
 
-                <InputTextField placeholder="Full Name" password={false} button={false}/>
+                <InputTextField placeholder="Full Name" password={false} button={false} name="fullname" handleStateChange={handleStateChange}/>
                 <div style={{marginTop: "10px"}} />
-                <InputTextField placeholder="Password" password={true} button={true}/>
+                <InputTextField placeholder="Password" password={true} button={true} name="password" handleStateChange={handleStateChange}/>
 
                 <div className={`${styles.forMargin}`}>
                     <BlueButton style={{padding: "13px 20px", lineHeight: "18px"}} placeholderText="Next" />
