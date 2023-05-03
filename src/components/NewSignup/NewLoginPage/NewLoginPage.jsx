@@ -32,7 +32,7 @@ export default function NewLoginPage({setLoggedIn}) {
         
             const url = new URL(`${process.env.REACT_APP_DOMAIN}/signin`);
 
-            var requestOptions = {
+            let requestOptions = {
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: { 'Content-Type': 'application/json' },

@@ -3,8 +3,12 @@ import TopNavBackWithLink from '../../TopNavWithBackLink/TopNavWithBackLink';
 import InputTextField from '../../InputTextField/InputTextField';
 
 import styles from './RegisterNameMobile.module.scss';
+import { useState } from 'react';
 
 export default function RegisterNameMobile() {
+    const [fullname, setFullname] = useState("");
+    const [password, setPassword] = useState("");
+
     return (
         <>
             <TopNavBackWithLink rightLogo={<></>} options={false} middleText={"Register"}/>
@@ -16,16 +20,11 @@ export default function RegisterNameMobile() {
                 </div>
 
                 <InputTextField placeholder="Full Name" password={false} button={false}/>
-
+                <div style={{marginTop: "10px"}} />
                 <InputTextField placeholder="Password" password={true} button={true}/>
 
-                {/* <InputTextField
-                        placeholder="Password"
-                        button={true}
-                        password={true} */}
-
                 <div className={`${styles.forMargin}`}>
-                    <BlueButton placeholderText="Next" />
+                    <BlueButton style={{padding: "13px 20px", lineHeight: "18px"}} placeholderText="Next" />
                 </div>
             </div>
         </>

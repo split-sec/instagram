@@ -9,6 +9,7 @@ import styles from './NewSignUpPage.module.scss';
 export default function NewSignUpPage() {
     let activeStatus = false;
     const myStyles = {
+        backgroundImage: `url("https://static.cdninstagram.com/rsrc.php/v3/yV/r/6JqvJ6H_bFT.png")`,
         backgroundPostion: "-364px -329px",
         backgroundSize: "440px 411px",
         height: "16px",
@@ -70,11 +71,9 @@ export default function NewSignUpPage() {
 
 
             <div className={`${styles.bottomContainer}`}>
-                <BlueButton placeholderText={
+                <BlueButton style={{padding: "13px 20px", lineHeight: "18px"}} placeholderText={
                     <>
-                        <img src="https://static.cdninstagram.com/rsrc.php/v3/yV/r/6JqvJ6H_bFT.png" 
-                            style={myStyles}
-                        />
+                        <span style={myStyles}/>
                         <p>Sign Up with Facebook</p>
                     </>
                 }/>

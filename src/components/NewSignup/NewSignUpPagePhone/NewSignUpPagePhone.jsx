@@ -1,5 +1,3 @@
-import { NavLink } from 'react-router-dom';
-
 import BlueButton from '../../BlueButton/BlueButton';
 
 import styles from './NewSignUpPagePhone.module.scss';
@@ -20,7 +18,7 @@ export default function NewSignUpPagePhone() {
             <div className={`${styles.infoText}`}>You may receive SMS notifications from us for security and login purposes.</div>
 
             <div className={`${styles.buttonPlaceholder}`}>
-                <BlueButton placeholderText={"Next"}/>
+                <BlueButton style={{padding: "13px 20px", lineHeight: "18px"}} placeholderText={"Next"}/>
             </div>
         </>
     );

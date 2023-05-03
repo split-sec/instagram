@@ -3,9 +3,15 @@ import InputTextField from '../../InputTextField/InputTextField';
 
 import styles from './EmailConfirmationMobile.module.scss';
 import BlueButton from '../../BlueButton/BlueButton';
+import { useState } from 'react';
 
 export default function EmailConfirmationMobile() {
     const emailaddress = "prathap@gmail.com";
+    const [otp, setOtp] = useState("");
+
+    function handleStateChange(e) {
+        setOtp(e.target.value);
+    }
 
     return (
         <>
@@ -18,10 +24,10 @@ export default function EmailConfirmationMobile() {
                     <span className={`${styles.link}`}> Resend code.</span>
                 </div>
 
-                <InputTextField placeholder="Confirmation code" />
+                <InputTextField handleStateChange={handleStateChange} placeholder="Confirmation code" />
 
                 <div className={`${styles.forMargin}`}>
-                    <BlueButton placeholderText={"Next"}/>
+                    <BlueButton style={{padding: "13px 20px", lineHeight: "18px"}} placeholderText={"Next"}/>
                 </div>
             </div>
         </>

@@ -23,7 +23,7 @@ export default function NewSignupOption({ setBasePage }) {
                 </div>
 
                 <div className={`${styles.buttonPlaceholder} flex`}>
-                    <BlueButton placeholderText="Get the Instagram app"/>
+                    <BlueButton style={{padding: "13px 20px", lineHeight: "18px"}} placeholderText="Get the Instagram app"/>
                 </div>
 
                 <div className={`${styles.linksPlaceholder} flex`}>
