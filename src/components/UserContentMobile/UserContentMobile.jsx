@@ -6,13 +6,12 @@ import UserStats from '../UserStats/UserStats';
 
 import styles from './UserContentMobile.module.scss';
 
-export default function UserContentMobile() {
-
+export default function UserContentMobile({result}) {
     return (
         <>
-            <UserProfile />
+            <UserProfile result={result}/>
 
-            <UserStats />
+            <UserStats result={result}/>
 
             <div className={`${styles.linkNav} flex`}>
                 <NavLink to='/sampleName'

@@ -21,7 +21,7 @@ import RegisterNameMobile from './NewSignup/RegisterNameMobile/RegisterNameMobil
 import RegisterBirthdayMobile from './NewSignup/RegisterBirthdayMobile/RegisterBirthdayMobile';
 
 export default function MobileRoutes() {
-    const [loggedIn, setLoggedIn] = useState(false);
+    const [loggedIn, setLoggedIn] = useState(true);
 
     return (
         <Routes>
@@ -42,7 +42,7 @@ export default function MobileRoutes() {
             <Route path='/reels' element ={<Reels />} />
             <Route path='/direct/inbox' element ={<Inbox />} />
             <Route path='/sampleName' element={<Profile />} >
-                <Route path='' element={<ProfilePosts /> } />
+                <Route path='/sampleName' element={<ProfilePosts /> } />
                 <Route path='/sampleName/feed' element={<ProfileFeed />} />
                 <Route path='/sampleName/saved' element={<ProfileSaved />} />
                 <Route path='/sampleName/tagged' element={<ProfileTagged />} />

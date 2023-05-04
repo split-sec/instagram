@@ -33,9 +33,10 @@ export default function HomePage() {
 
     return (
       <>
-        {
+        {/* {
           width < 640 ? <MobileRoutes /> : <TabletRoutes />
-        }
+        } */}
+        <MobileRoutes />
       </>
     );
 }
