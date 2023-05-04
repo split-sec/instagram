@@ -7,7 +7,9 @@ import Reels from './Reels/Reels';
 import Inbox from './Inbox/Inbox';
 import Profile from './Profile/Profile';
 import Notifications from './Notifications/Notifications';
-import ProfilePosts from './ProfilePosts/ProfilePosts';
+import ProfilePosts from './Profile/ProfilePosts/ProfilePosts';
+import ProfileFeed from './Profile/ProfileFeed/ProfileFeed';
+import ProfileSaved from './Profile/ProfileSaved/ProfileSaved';
 
 import NewSignupLanding from './NewSignup/NewSignupLanding';
 import NewSignUpPage from './NewSignup/NewSignUpPage/NewSignUpPage';
@@ -40,9 +42,9 @@ export default function MobileRoutes() {
             <Route path='/direct/inbox' element ={<Inbox />} />
             <Route path='/sampleName' element={<Profile />} >
                 <Route path='' element={<ProfilePosts /> } />
-                <Route path='/sampleName/feed' element={<h1>Feed</h1>} />
+                <Route path='/sampleName/feed' element={<ProfileFeed />} />
                 <Route path='/sampleName/tagged' element={<h1>Tagged</h1>} />
-                <Route path='/sampleName/saved' element={<h1>Saved</h1>} />
+                <Route path='/sampleName/saved' element={<ProfileSaved />} />
             </Route>
             <Route path='/notifications' element={<Notifications />} />
         </Routes>

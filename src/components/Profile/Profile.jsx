@@ -29,7 +29,7 @@ export default function Profile() {
                     </div>
                 </div>
                 <div className={`${styles.newMessageIcon}`}>
-                    { addFriendsSvg() }
+                    <button className={`${styles.addFriend}`}>{ addFriendsSvg() }</button>
                 </div>
             </div>
             <UserContentMobile />
