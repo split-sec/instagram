@@ -10,6 +10,7 @@ import Notifications from './Notifications/Notifications';
 import ProfilePosts from './Profile/ProfilePosts/ProfilePosts';
 import ProfileFeed from './Profile/ProfileFeed/ProfileFeed';
 import ProfileSaved from './Profile/ProfileSaved/ProfileSaved';
+import ProfileTagged from './Profile/ProfileTagged/ProfileTagged';
 
 import NewSignupLanding from './NewSignup/NewSignupLanding';
 import NewSignUpPage from './NewSignup/NewSignUpPage/NewSignUpPage';
@@ -43,8 +44,8 @@ export default function MobileRoutes() {
             <Route path='/sampleName' element={<Profile />} >
                 <Route path='' element={<ProfilePosts /> } />
                 <Route path='/sampleName/feed' element={<ProfileFeed />} />
-                <Route path='/sampleName/tagged' element={<h1>Tagged</h1>} />
                 <Route path='/sampleName/saved' element={<ProfileSaved />} />
+                <Route path='/sampleName/tagged' element={<ProfileTagged />} />
             </Route>
             <Route path='/notifications' element={<Notifications />} />
         </Routes>

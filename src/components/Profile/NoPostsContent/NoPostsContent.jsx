@@ -1,15 +1,15 @@
 import styles from './NoPostsContent.module.scss';
 
-export function NoPostsContent() {
+export function NoPostsContent(props) {
     return (
         <div className={`${styles.container}`}>
-            <div className={`${styles.cameraImg}`}></div>
+            <div style={props.styles}></div>
 
-            <div className={`${styles.header}`}>Share photos</div>
+            <div className={`${styles.header}`}>{props.header}</div>
 
-            <div className={`${styles.content}`}>When you share photos, they will appear on your profile.</div>
+            <div className={`${styles.content}`}>{props.content}</div>
 
-            <div className={`${styles.buttonText}`}>Share your first photo</div>
+            {props.link ? <div className={`${styles.buttonText}`}>Share your first photo</div> : <></>}
         </div>
     );
 }
