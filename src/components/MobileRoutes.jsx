@@ -11,6 +11,7 @@ import ProfilePosts from './Profile/ProfilePosts/ProfilePosts';
 import ProfileFeed from './Profile/ProfileFeed/ProfileFeed';
 import ProfileSaved from './Profile/ProfileSaved/ProfileSaved';
 import ProfileTagged from './Profile/ProfileTagged/ProfileTagged';
+import YourActivity from './MobileSettings/MobileYourActivity/YourActivity';
 
 import NewSignupLanding from './NewSignup/NewSignupLanding';
 import NewSignUpPage from './NewSignup/NewSignUpPage/NewSignUpPage';
@@ -29,25 +30,26 @@ export default function MobileRoutes() {
             {!loggedIn ? 
             <>
                 <Route path='/accounts/signup' element={<NewSignUpPage />}>
-                    <Route path='/accounts/signup/phone' element={<NewSignUpPagePhone />} />
-                    <Route path='/accounts/signup/email' element={<NewSignUpPageEmail />} />
+                    <Route path='phone' element={<NewSignUpPagePhone />} />
+                    <Route path='email' element={<NewSignUpPageEmail />} />
+                    <Route path='emailConfirmation' element={<EmailConfirmationMobile />} />
+                    <Route path='name' element={<RegisterNameMobile />} />
+                    <Route path='birthday' element={<RegisterBirthdayMobile />} />
                 </Route>
-                <Route path='/accounts/signup/emailConfirmation' element={<EmailConfirmationMobile />} />
-                <Route path='/accounts/signup/name' element={<RegisterNameMobile />} />
-                <Route path='/accounts/signup/birthday' element={<RegisterBirthdayMobile />} />
             </>
             :
             <></>}
             <Route path='/explore' element ={<Explore />} />
             <Route path='/reels' element ={<Reels />} />
             <Route path='/direct/inbox' element ={<Inbox />} />
-            <Route path='/sampleName' element={<Profile />} >
-                <Route path='/sampleName' element={<ProfilePosts /> } />
-                <Route path='/sampleName/feed' element={<ProfileFeed />} />
-                <Route path='/sampleName/saved' element={<ProfileSaved />} />
-                <Route path='/sampleName/tagged' element={<ProfileTagged />} />
+            <Route path=':id' element={<Profile />} >
+                <Route index element={<ProfilePosts /> } />
+                <Route path='feed' element={<ProfileFeed />} />
+                <Route path='saved' element={<ProfileSaved />} />
+                <Route path='tagged' element={<ProfileTagged />} />
             </Route>
             <Route path='/notifications' element={<Notifications />} />
+            <Route path='/youractivity' element={<YourActivity />} />
         </Routes>
     );
 }

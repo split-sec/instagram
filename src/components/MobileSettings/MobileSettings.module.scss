@@ -1,0 +1,119 @@
+.topNav {
+    border-bottom: 1px solid rgb(219, 219, 219);
+    height: 45px;
+    padding: 0 16px;
+
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.namePlaceholder {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.container1 {
+    margin: 28px 0 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.box1 {
+    padding: 0 20px 0 16px;
+}
+
+.accountCentre {
+    font-size: 16px;
+    color:rgb(0, 0, 0);
+    line-height: 20px;
+    font-weight: 600;
+
+    margin-top: 16px;
+}
+
+.subtext {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    line-height: 16px;
+    font-weight: 400;
+
+    margin-top: 16px;
+}
+
+.buttonText {
+    padding-left: 8px;
+    margin-top: 0px;
+}
+
+.buttonContainer1 {
+    margin-top: 8px;
+    align-items: center;
+}
+
+.blueButtonText {
+    color: rgb(0, 149, 246);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+
+    margin-top: 16px;
+}
+
+.containerSeparator {
+    margin: 20px 16px 8px;
+
+    color: rgb(115, 115, 115);
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.container2 {
+    
+}
+
+.buttonIndividualContainer {
+    height: 44px;
+    align-items: center;
+
+    padding: 0 16px;
+    background-color: rgb(255, 255, 255);
+
+    border-top:1px solid rgb(219, 219, 219);
+}
+
+.buttonInnerText {
+    flex-grow: 1;
+}
+
+.greaterArrow {
+    background-size: 440px 411px;
+    background-position: -428px -61px;
+    background-image: url('https://static.cdninstagram.com/rsrc.php/v3/yV/r/6JqvJ6H_bFT.png');
+    background-repeat: no-repeat;
+    
+    height: 15px;
+    width: 12px;
+}
+
+.specialButtonInnerText {
+    color:rgb(0, 149, 246);
+    font-weight: 600;
+}
+
+.smallButtonInnerText {
+    color:rgb(0, 149, 246);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.lastButton {
+    margin: 12px 0 54px;
+}
+
+.logoutText {
+    color: #ed4956;
+}

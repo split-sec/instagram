@@ -1,0 +1,55 @@
+.topContainer {
+    padding: 24px 32px;
+    text-align: center;
+}
+
+.heading1 {
+    font-size: 24px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.subText {
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(115, 115, 115);
+    padding: 4px 0;
+}
+
+.heading2 {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding: 4px 0 0;
+}
+
+.buttonContainer {
+    padding: 8px 4px;
+
+    align-items: center;
+}
+
+.contentContainer {
+    flex-grow: 1;
+}
+
+.iconPlaceholder {
+    padding: 0 12px;
+}
+
+.arrowContainer {
+    padding: 0 12px;
+}
+
+.greaterArrow {
+    background-size: 440px 411px;
+    background-position: -428px -61px;
+    background-image: url('https://static.cdninstagram.com/rsrc.php/v3/yV/r/6JqvJ6H_bFT.png');
+    background-repeat: no-repeat;
+    
+    height: 15px;
+    width: 12px;
+}

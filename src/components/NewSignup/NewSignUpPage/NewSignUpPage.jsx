@@ -1,4 +1,4 @@
-import { Outlet, NavLink } from 'react-router-dom';
+import { Outlet, NavLink, Navigate } from 'react-router-dom';
 
 import TopNavWithBackLink from '../../TopNavWithBackLink/TopNavWithBackLink.jsx';
 import { miniDownChevronSvg } from '../../assets/Icons.jsx';
@@ -7,7 +7,6 @@ import BlueButton from '../../BlueButton/BlueButton.jsx';
 import styles from './NewSignUpPage.module.scss';
 
 export default function NewSignUpPage() {
-    let activeStatus = false;
     const myStyles = {
         backgroundImage: `url("https://static.cdninstagram.com/rsrc.php/v3/yV/r/6JqvJ6H_bFT.png")`,
         backgroundPostion: "-364px -329px",
