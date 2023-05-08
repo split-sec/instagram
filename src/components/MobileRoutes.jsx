@@ -12,6 +12,7 @@ import ProfileFeed from './Profile/ProfileFeed/ProfileFeed';
 import ProfileSaved from './Profile/ProfileSaved/ProfileSaved';
 import ProfileTagged from './Profile/ProfileTagged/ProfileTagged';
 import YourActivity from './MobileSettings/MobileYourActivity/YourActivity';
+import EditProfile from "./MobileSettings/EditProfile/EditProfile";
 
 import NewSignupLanding from './NewSignup/NewSignupLanding';
 import NewSignUpPage from './NewSignup/NewSignUpPage/NewSignUpPage';
@@ -49,7 +50,8 @@ export default function MobileRoutes() {
                 <Route path='tagged' element={<ProfileTagged />} />
             </Route>
             <Route path='/notifications' element={<Notifications />} />
-            <Route path='/youractivity' element={<YourActivity />} />
+            <Route path='/accounts/youractivity' element={<YourActivity />} />
+            <Route path='/accounts/edit' element={<EditProfile />} />
         </Routes>
     );
 }

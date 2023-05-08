@@ -1,0 +1,104 @@
+.heading1 {
+    padding: 32px 0 24px 45px;
+
+    font-size: 24px;
+    line-height: 27px;
+    color: rgb(0, 0, 0);
+}
+
+.editContainer {
+    margin-top: 20px;
+}
+
+.pfpContainer {
+    margin: 2px 20px 0px 20px;
+
+    height: 38px;
+    width: 38px;
+}
+
+.pfpImage {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+    // background-image: url('https://instagram.fhyd1-5.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fhyd1-5.fna.fbcdn.net&_nc_cat=1&_nc_ohc=i-6LEwxZ7rkAX-acZJq&edm=AJ9x6zYBAAAA&ccb=7-5&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2-ccb7-5&oh=00_AfAWq-wXtUv0SDHbUUWHYkrEIu1tTDR9zNjqE6y1zcaVVw&oe=645E49CF&_nc_sid=cff2a4');
+    // background-position: contain;
+    // background-repeat: no-repeat;
+
+    background-color: grey;
+}
+
+.usernameText {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.blueButtonText {
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+}
+
+.form {
+    margin: 16px 0;
+}
+
+.label {
+    margin-top: 6px;
+    padding: 0 20px;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.inputPlaceholder {
+    padding: 0 20px;
+    width: 100%;
+
+    margin: 8px 0 0;
+}
+
+.disabledInput {
+    height: 32px;
+    width: 100%;
+
+    padding: 0 10px;
+
+    background-color: rgb(239, 239, 239);
+
+    border: solid 1px rgb(219, 219, 219);
+
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(115, 115, 115);
+}
+
+.content {
+    margin: 8px 0;
+
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(115, 115, 115);
+    font-weight: 400;
+}
+
+.textarea {
+    width: 100%;
+    height: 60px;
+    padding: 6px 10px;
+
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.buttonDiv {
+    width: 100%;
+    padding: 6px 10px;
+
+    border: 1px solid rgb(219, 219, 219);
+}

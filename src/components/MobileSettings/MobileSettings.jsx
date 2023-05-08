@@ -96,20 +96,22 @@ export default function MobileSettings({
       </div>
 
       <div className={`flex flex-col`}>
-        <div
-          className={`${styles.buttonIndividualContainer} flex`}
-        >
-          <div
-            className={`${styles.buttonInnerText}`}
-          >
-            Edit Profile
-          </div>
-          <div
-            className={`${styles.greaterArrow}`}
-          ></div>
-        </div>
+        <Link to='/accounts/edit'>
+            <div
+              className={`${styles.buttonIndividualContainer} flex`}
+            >
+              <div
+                className={`${styles.buttonInnerText}`}
+              >
+                Edit Profile
+              </div>
+              <div
+                className={`${styles.greaterArrow}`}
+              ></div>
+            </div>
+        </Link>
 
-        <Link to='/youractivity'>
+        <Link to='/accounts/youractivity'>
             <div
               className={`${styles.buttonIndividualContainer} flex`}
             >
