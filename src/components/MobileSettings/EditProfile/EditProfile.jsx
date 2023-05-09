@@ -1,3 +1,4 @@
+import BlueButton from '../../BlueButton/BlueButton';
 import TopNavBackWithLink from '../../TopNavWithBackLink/TopNavWithBackLink';
 import styles from './EditProfile.module.scss';
 
@@ -58,8 +59,18 @@ export default function EditProfile() {
                     <div className={`${styles.buttonDiv}`}>Prefer not to say</div>
                 </div>
 
+                <div style={{margin: "0 20px"}}>
+                    <div className={`${styles.content}`}>
+                        This won't be part of your public profile.
+                    </div>
+                </div>
+
                 <div className={`${styles.label}`}>
                     Show account suggestions on profiles
+                </div>
+
+                <div style={{margin: "16px 20px 0", width: "80px"}}>
+                    <BlueButton placeholderText={"Submit"} disabled={true}/>
                 </div>
             </form>
         </>

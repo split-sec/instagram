@@ -100,6 +100,7 @@ export default function Profile() {
     <>
       {/* { settingsState === true ? <MobileSettings setSettings={setSettings}/> : ProfilePage() } */}
       <MobileSettings setSettings={setSettings} />
+      {/* {ProfilePage()} */}
     </>
   );
 }

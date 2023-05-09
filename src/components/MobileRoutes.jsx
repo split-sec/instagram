@@ -13,6 +13,8 @@ import ProfileSaved from './Profile/ProfileSaved/ProfileSaved';
 import ProfileTagged from './Profile/ProfileTagged/ProfileTagged';
 import YourActivity from './MobileSettings/MobileYourActivity/YourActivity';
 import EditProfile from "./MobileSettings/EditProfile/EditProfile";
+import WhatYouSee from "./MobileSettings/WhatYouSee/WhatYouSee";
+import WhoCanSeeYourContent from "./MobileSettings/WhoCanSeeYourContent/WhoCanSeeYourContent";
 
 import NewSignupLanding from './NewSignup/NewSignupLanding';
 import NewSignUpPage from './NewSignup/NewSignUpPage/NewSignUpPage';
@@ -52,6 +54,8 @@ export default function MobileRoutes() {
             <Route path='/notifications' element={<Notifications />} />
             <Route path='/accounts/youractivity' element={<YourActivity />} />
             <Route path='/accounts/edit' element={<EditProfile />} />
+            <Route path='/accounts/what_you_see' element={<WhatYouSee />} />
+            <Route path='/accounts/who_can_see_your_content' element={<WhoCanSeeYourContent />} />
         </Routes>
     );
 }

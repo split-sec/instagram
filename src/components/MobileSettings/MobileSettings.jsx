@@ -126,31 +126,35 @@ export default function MobileSettings({
             </div>
         </Link>
 
-        <div
-          className={`${styles.buttonIndividualContainer} flex`}
-        >
-          <div
-            className={`${styles.buttonInnerText}`}
-          >
-            What you see
-          </div>
-          <div
-            className={`${styles.greaterArrow}`}
-          ></div>
-        </div>
+        <Link to='/accounts/what_you_see'>
+            <div
+              className={`${styles.buttonIndividualContainer} flex`}
+            >
+              <div
+                className={`${styles.buttonInnerText}`}
+              >
+                What you see
+              </div>
+              <div
+                className={`${styles.greaterArrow}`}
+              ></div>
+            </div>
+        </Link>
 
-        <div
-          className={`${styles.buttonIndividualContainer} flex`}
-        >
+        <Link to="/accounts/who_can_see_your_content">
           <div
-            className={`${styles.buttonInnerText}`}
+            className={`${styles.buttonIndividualContainer} flex`}
           >
-            Who can see your content
+            <div
+              className={`${styles.buttonInnerText}`}
+            >
+              Who can see your content
+            </div>
+            <div
+              className={`${styles.greaterArrow}`}
+            ></div>
           </div>
-          <div
-            className={`${styles.greaterArrow}`}
-          ></div>
-        </div>
+        </Link>
 
         <div
           className={`${styles.buttonIndividualContainer} flex`}
