@@ -1,45 +1,44 @@
 .container {
-    padding: 16px;
-    margin-right: 5px;
+  padding: 16px;
+  margin-right: 5px;
 
-    border: 1px solid rgb(219, 219, 219);
+  border: 1px solid rgb(219, 219, 219);
 
-    width: 156px;
+  width: 156px;
 
-    flex-grow: 0;
-    align-items: center;
+  flex-grow: 0;
+  align-items: center;
 }
 
 .imgContainer {
-    height: 77px;
-    width: 77px;
+  height: 77px;
+  width: 77px;
 
-    border-radius: 50%;
-
-    background-color: yellowgreen;
+  border-radius: 50%;
+  background-color: yellowgreen;
 }
 
 .profileName {
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .followedBy {
-    color: rgb(142, 142, 142);
+  color: rgb(142, 142, 142);
 
-    width: 80%;
+  width: 80%;
 
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
 }
